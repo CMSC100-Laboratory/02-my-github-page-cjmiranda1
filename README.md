@@ -1,4 +1,5 @@
 README DRAFT
+
 Carlos James R. Miranda
 BS Computer Science
 Live Website Link: https://cmsc100-laboratory.github.io/02-my-github-page-cjmiranda1/
