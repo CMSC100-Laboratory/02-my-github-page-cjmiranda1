@@ -1,18 +1,257 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-<html>
-	<head>
-		<title>Sample Web Page</title>
-	</head>
+<body id="top">
+  <!-- Background -->
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="blob b4"></span>
+  </div>
 
-	<body>
-		<h1>Carlos James R. Miranda</h1>
-		<p>This is the first paragraph of text</p>
-		<hr />
-		<p>This is the second paragraph of the text</p>
-	</body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Back to top">
+        <span class="brand-mark">CJ</span>
+        <span class="brand-name">Carlos James</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-row">
+        <div class="hero-left">
+          <h1 class="hero-title">Carlos <span>James</span></h1>
+          <p class="hero-tagline">
+            A Computer Science student building things, learning along the way, 
+            and vibing with the process of growth and exploration in the industry.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn ghost" href="#projects">See Projects</a>
+            <a class="btn ghost" href="#skills">View Skills</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric">
+              <p class="metric-k">Strength</p>
+              <p class="metric-v">Work Under pressure</p>
+            </div>
+            <div class="metric">
+              <p class="metric-k">Goal</p>
+              <p class="metric-v">Organized layouts</p>
+            </div>
+            <div class="metric">
+              <p class="metric-k">Mindset</p>
+              <p class="metric-v">Best Quality outputs</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-right" aria-label="Profile card">
+          <div class="profile-wrapper">
+            <div class="profile-card">
+              <div class="avatar">
+                <img src="main.png" alt="Portrait of Carlos James">
+              </div>
+            </div>
+
+            <p class="profile-quote">
+              “Certified crammer with quality projects.”
+            </p>
+          </div>
+        </aside>
 
 
+    <!-- About Me-->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About Me</h2>
+          <p class="muted">A quick introduction about me and my work style.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <h3 class="card-title">Who I am</h3>
+            <p class="muted">
+              I am a hardworking, self-motivated, and responsible person. I am very dedicated
+              Computer Science student, adaptable to different situations and circumstances, and able 
+              to work well both independently and in teams.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">How I work</h3>
+            <p class="muted">
+              I’m used to working under pressure and strict deadlines while maintaining quality.
+              I value clear communication, strong collaboration, and continuously improving my skills.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="muted">Soft skills and programming languages.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card">
+            <div class="card-row">
+              <h3 class="card-title">Core Skills</h3>
+            </div>
+
+            <div class="pill-wrap">
+              <span class="pill-chip">Communication</span>
+              <span class="pill-chip">Leadership</span>
+              <span class="pill-chip">Problem-Solving</span>
+              <span class="pill-chip">Critical Thinking</span>
+            </div>
+
+            <div class="callout">
+              <p class="muted small">
+                I focus on clear coordination and fast execution under deadlines.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-row">
+              <h3 class="card-title">Programming Languages</h3>
+              <span class="badge badge-2">Tech</span>
+            </div>
+
+            <div class="pill-wrap">
+              <span class="pill-chip pill-chip-2">Python</span>
+              <span class="pill-chip pill-chip-2">Java</span>
+              <span class="pill-chip pill-chip-2">C</span>
+              <span class="pill-chip pill-chip-2">Dart</span>
+              <span class="pill-chip pill-chip-2">CSS</span>
+            </div>
+
+            <div class="callout">
+              <p class="muted small">
+                Comfortable with fundamentals and building structured programs.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">Selected academic projects.</p>
+        </div>
+
+        <div class="projects">
+          <article class="project-card featured">
+            <div class="project-top">
+              <span class="tag">CMSC 22</span>
+              <span class="tag tag-accent">Featured</span>
+            </div>
+
+            <h3 class="project-title">ICS Registration Planner</h3>
+            <p class="muted">
+              A project designed to assist students in planning and organizing course 
+              registrations efficiently. The application that allows students to securely 
+              log in, select and modify their degree program, and add their schedules for
+              the entire week.
+            </p>
+
+            <ul class="bullets">
+              <li>Student-friendly planning flow</li>
+              <li>Clear structure and layout</li>
+              <li>Focus on usability</li>
+            </ul>
+
+            <div class="project-footer">
+              <span class="mini">UI</span>
+              <span class="mini">Logic</span>
+              <span class="mini">Workflow</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top">
+              <span class="tag">CMSC 150</span>
+            </div>
+
+            <h3 class="project-title">Greenvale Mitigation App</h3>
+            <p class="muted">
+              A numerical and symbolic computation project that models a real-world
+              environmental planning problem. The system minimizes implementation cost
+              while satisfying pollutant reduction constraints using multiple mitigation
+              options and feasibility checks.
+            </p>
+
+            <ul class="bullets">
+              <li>Formulated as a constrained optimization problem</li>
+              <li>Handles multiple pollutants and mitigation options</li>
+              <li>Identifies feasible and infeasible solutions</li>
+            </ul>
 
 
+            <div class="project-footer">
+              <span class="mini">Cost minimization</span>
+              <span class="mini">Planning</span>
+              <span class="mini">Feasibility</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-row">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <div>
+            <p class="footer-name">Carlos James Miranda</p>
+            <p class="muted small">• Frontend Software Engineer</p>
+            <p class="muted small">• BS Computer Science</p>
+            <p class="muted small">• UPLB</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p><strong>Email:</strong> crmiranda1@up.edu.ph</p>
+        <p><strong>GitHub:</strong> https://github.com/cjmiranda1</p>
+        <a class="backtop" href="#top">Back to Top ↑</a>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="muted small">“Discipline is better than motivation.”</p>
+    </div>
+  </footer>
+</body>
 </html>
